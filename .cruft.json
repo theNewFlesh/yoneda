@@ -2,6 +2,12 @@
   "template": "https://github.com/theNewFlesh/cookiecutter-datalus",
   "commit": "08042f8db7a11c13e3f75fa65489ec916e82afe4",
   "checkout": null,
+  "skip": [
+    "gitignore",
+    "gitkeep",
+    "\\.lock$",
+    "__init__\\.py$"
+  ],
   "context": {
     "cookiecutter": {
       "repo": "yoneda",
