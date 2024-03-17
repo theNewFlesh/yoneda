@@ -498,7 +498,7 @@
                 "id": "pypi_user",
                 "description": "PyPi username:",
                 "type": "promptString",
-                "default": "the-new-flesh"
+                "default": "__token__"
             },
             {
                 "id": "pypi_password",
@@ -514,7 +514,7 @@
                 "id": "pypi_url",
                 "description": "PyPI registry URL:",
                 "type": "promptString",
-                "default": "https://pypi.org"
+                "default": "pypi"
             },
             {
                 "id": "commit_message",
