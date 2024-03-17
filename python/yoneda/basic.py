@@ -1,6 +1,6 @@
 from typing import Callable, Generic, TypeVar  # noqa: F401
 
-import pandas as pd
+import math
 
 import yoneda.monad as sgm
 from yoneda.monad import Monad
@@ -49,7 +49,7 @@ class Maybe(Monad, Generic[A]):
         # type: () -> str
         '''State of monad. Either just or nothing.'''
         data = self._data
-        if data is None or pd.isna(data):
+        if data is None or math.isnan(data):
             return 'nothing'
         return 'just'
 # ------------------------------------------------------------------------------
