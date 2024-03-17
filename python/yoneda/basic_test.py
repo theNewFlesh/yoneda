@@ -1,3 +1,4 @@
+import math
 import unittest
 
 from lunchbox.enforce import EnforceError
@@ -29,6 +30,12 @@ class MaybeTests(unittest.TestCase):
         self.assertEqual(result, 'just')
 
         result = sgb.Maybe.nothing().state
+        self.assertEqual(result, 'nothing')
+
+        result = sgb.Maybe(None).state
+        self.assertEqual(result, 'nothing')
+
+        result = sgb.Maybe(math.nan).state
         self.assertEqual(result, 'nothing')
 
 
