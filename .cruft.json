@@ -3,10 +3,16 @@
   "commit": "08042f8db7a11c13e3f75fa65489ec916e82afe4",
   "checkout": null,
   "skip": [
-    "gitignore",
-    "gitkeep",
+    "\\.gitignore$",
+    "\\.gitkeep$",
     "\\.lock$",
-    "__init__\\.py$"
+    "__init__\\.py$",
+    "docs/.*",
+    "public/.*",
+    "sphinx/.*rst$",
+    "mkdocs/md/(?!index\\.md|style\\.css)",
+    "resources/.*",
+    "python/yoneda/.*(?!command\\.py$)"
   ],
   "context": {
     "cookiecutter": {
