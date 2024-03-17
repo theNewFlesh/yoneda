@@ -7,7 +7,6 @@ basic
    :members:
    :private-members:
    :special-members:
-   :undoc-members:
    :show-inheritance:
 
 monad
@@ -16,7 +15,6 @@ monad
    :members:
    :private-members:
    :special-members:
-   :undoc-members:
    :show-inheritance:
 
 tools
@@ -25,5 +23,4 @@ tools
    :members:
    :private-members:
    :special-members:
-   :undoc-members:
    :show-inheritance:
