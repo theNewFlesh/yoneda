@@ -1,0 +1,40 @@
+{
+  "template": "https://github.com/theNewFlesh/cookiecutter-datalus",
+  "commit": "08042f8db7a11c13e3f75fa65489ec916e82afe4",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "repo": "yoneda",
+      "repo_type": "library",
+      "include_black": "no",
+      "include_gcc": "no",
+      "include_helm": "no",
+      "include_mkdocs": "no",
+      "include_nvidia": "no",
+      "include_openexr": "no",
+      "include_prod_cli": "no",
+      "include_prod_envs": "yes",
+      "include_rsync": "no",
+      "include_tensorflow": "no",
+      "include_vscode_server": "no",
+      "port_prefix": "22",
+      "git_user": "theNewFlesh",
+      "git_host": "github",
+      "git_organization": "theNewFlesh",
+      "docker_registry": "dockerhub",
+      "organization_url": "github.com",
+      "description": "Categeory theory in python.",
+      "author": "Alex Braun",
+      "email": "alexander.g.braun@gmail.com",
+      "website": "https://www.alexgbraun.com",
+      "volume": "",
+      "keywords": "category, category-theory, monad, monoid, functor, isopmorphism, morphism, arrow",
+      "year": "2024",
+      "python_min_version": "8",
+      "python_max_version": "10",
+      "initial_repo_version": "0.1.0",
+      "_template": "https://github.com/theNewFlesh/cookiecutter-datalus"
+    }
+  },
+  "directory": null
+}

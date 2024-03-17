@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  yoneda:
+    container_name: yoneda
+    image: yoneda:dev
+    build:
+      context: .
+      dockerfile: dev.dockerfile
+    ports:
+      - "2200:9000"
+      - "2280:8080"
+    userns_mode: "host"
+    user: ubuntu
+    env_file:
+      - config/dev-env
+    volumes:
+      - ../:/home/ubuntu/yoneda
+      - ~/.ssh:/home/ubuntu/.ssh:ro
+      - ./config/jupyter:/home/ubuntu/.jupyter
+      - ./config/zshrc:/home/ubuntu/.zshrc
+    working_dir: "/home/ubuntu"
