@@ -17,10 +17,3 @@ monad
    :special-members:
    :show-inheritance:
 
-tools
------
-.. automodule:: yoneda.tools
-   :members:
-   :private-members:
-   :special-members:
-   :show-inheritance:
