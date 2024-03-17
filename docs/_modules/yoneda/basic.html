@@ -88,7 +88,7 @@
   <h1>Source code for yoneda.basic</h1><div class="highlight"><pre>
 <span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Callable</span><span class="p">,</span> <span class="n">Generic</span><span class="p">,</span> <span class="n">TypeVar</span>  <span class="c1"># noqa: F401</span>
 
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">math</span>
 
 <span class="kn">import</span> <span class="nn">yoneda.monad</span> <span class="k">as</span> <span class="nn">sgm</span>
 <span class="kn">from</span> <span class="nn">yoneda.monad</span> <span class="kn">import</span> <span class="n">Monad</span>
@@ -148,7 +148,7 @@
         <span class="c1"># type: () -&gt; str</span>
 <span class="w">        </span><span class="sd">&#39;&#39;&#39;State of monad. Either just or nothing.&#39;&#39;&#39;</span>
         <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_data</span>
-        <span class="k">if</span> <span class="n">data</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">pd</span><span class="o">.</span><span class="n">isna</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">data</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">math</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
             <span class="k">return</span> <span class="s1">&#39;nothing&#39;</span>
         <span class="k">return</span> <span class="s1">&#39;just&#39;</span></div>
 
