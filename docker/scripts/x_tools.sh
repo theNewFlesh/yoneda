@@ -329,8 +329,8 @@ x_docs () {
     sphinx-build sphinx $DOCS_DIR;
     cp -f sphinx/style.css $DOCS_DIR/_static/style.css;
     touch $DOCS_DIR/.nojekyll;
-    # mkdir -p $DOCS_DIR/resources;
-    # cp resources/* $DOCS_DIR/resources/;
+    mkdir -p $DOCS_DIR/resources;
+    cp resources/*.png $DOCS_DIR/resources/;
 }
 
 x_docs_architecture () {
