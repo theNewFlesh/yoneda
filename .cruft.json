@@ -1,6 +1,6 @@
 {
   "template": "https://github.com/theNewFlesh/cookiecutter-datalus",
-  "commit": "7144ae005cbe5c0bc58cec3f151258fea83406b7",
+  "commit": "ae8b00c684497537872ce1b9f7a0a48edeb51009",
   "checkout": null,
   "skip": [
     "__init__\\.py$",
@@ -13,7 +13,7 @@
     "public/.*",
     "python/yoneda/.*(?!command\\.py$)",
     "resources/.*",
-    "sphinx/.*rst$"  
+    "sphinx/.*rst$"
   ],
   "context": {
     "cookiecutter": {
