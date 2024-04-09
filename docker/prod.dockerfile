@@ -42,6 +42,6 @@ USER ubuntu
 ENV REPO='yoneda'
 ENV PYTHONPATH "${PYTHONPATH}:/home/ubuntu/$REPO/python"
 RUN echo "\n${CYAN}INSTALL YONEDA{CLEAR}"; \
-    pip3.10 install --user --upgrade yoneda
+    pip3.10 install --user yoneda==$VERSION
 
 ENV PATH=$PATH:/home/ubuntu/.local/bin
