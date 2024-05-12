@@ -2,7 +2,7 @@ from typing import Callable, Generic, TypeVar  # noqa: F401
 
 import math
 
-import yoneda.monad as sgm
+import yoneda.monad as ym
 from yoneda.monad import Monad
 
 A = TypeVar('A')
@@ -68,7 +68,7 @@ class Try(Monad, Generic[A]):
         Returns:
             Maybe: Try monad of value.
         '''
-        return sgm.succeed(cls, value)
+        return ym.succeed(cls, value)
 
     @classmethod
     def failure(cls, error):
@@ -82,7 +82,7 @@ class Try(Monad, Generic[A]):
         Returns:
             Maybe: Try monad of error.
         '''
-        return sgm.fail(cls, error)
+        return ym.fail(cls, error)
 
     def __repr__(self):
         # type: () -> str

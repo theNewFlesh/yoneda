@@ -343,7 +343,7 @@ def partial_dot(func):
 
     Example:
         ```
-        app = sgm.app
+        app = ym.app
         u = Monad(lambda x: x + 1)
         v = Monad(lambda x: x + 2)
         w = Monad(3)
