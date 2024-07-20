@@ -35,38 +35,34 @@
 
 # Introduction
 
-Categeory theory in python.
+Category theory in python.
 
 See [documentation](https://theNewFlesh.github.io/yoneda/) for details.
 
-# Installation
-### Python
-`pip install yoneda`
+# Installation for Developers
 
 ### Docker
-1. Install [docker-desktop](https://docs.docker.com/desktop/)
-2. `docker pull theNewFlesh/yoneda:[version]`
-
-### Docker For Developers
 1. Install [docker-desktop](https://docs.docker.com/desktop/)
 2. Ensure docker-desktop has at least 4 GB of memory allocated to it.
 3. `git clone git@github.com:theNewFlesh/yoneda.git`
 4. `cd yoneda`
 5. `chmod +x bin/yoneda`
 6. `bin/yoneda docker-start`
+   - If building on a M1 Mac run `export DOCKER_DEFAULT_PLATFORM=linux/amd64` first.
 
 The service should take a few minutes to start up.
 
 Run `bin/yoneda --help` for more help on the command line tool.
 
 ### ZSH Setup
-
 1. `bin/yoneda` must be run from this repository's top level directory.
 2. Therefore, if using zsh, it is recommended that you paste the following line
     in your ~/.zshrc file:
     - `alias yoneda="cd [parent dir]/yoneda; bin/yoneda"`
     - Replace `[parent dir]` with the parent directory of this repository
-3. Running the `zsh-complete` command will enable tab completions of the cli
+3. Consider adding the following line to your ~/.zshrc if you are using a M1 Mac:
+    - `export DOCKER_DEFAULT_PLATFORM=linux/amd64`
+4. Running the `zsh-complete` command will enable tab completions of the cli
    commands, in the next shell session.
 
    For example:
@@ -74,6 +70,16 @@ Run `bin/yoneda --help` for more help on the command line tool.
      tab to cycle through
    - `yoneda docker-[tab]` will show you only the cli options that begin with
      "docker-"
+
+# Installation for Production
+
+### Python
+`pip install yoneda`
+
+### Docker
+1. Install [docker-desktop](https://docs.docker.com/desktop/)
+2. `docker pull theNewFlesh/yoneda:[version]`
+
 
 ---
 
@@ -150,7 +156,8 @@ The following is a complete list of all available development commands:
 | build-publish           | Run production tests first then publish pip package of repo to PyPi |
 | build-test              | Build test version of repo for prod testing                         |
 | docker-build            | Build Docker image                                                  |
-| docker-build-from-cache | Build Docker image from cached image                                |
+| docker-build-from-cache | Build Docker image from registry cache                              |
+| docker-build-no-cache   | Build Docker image without cache                                    |
 | docker-build-prod       | Build production image                                              |
 | docker-container        | Display the Docker container id                                     |
 | docker-destroy          | Shutdown container and destroy its image                            |
