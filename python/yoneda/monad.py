@@ -65,7 +65,7 @@ def wrap(monad, data):
     '''
     Wrap: M -> A -> MA
 
-    .. image:: resources/wrap.png
+    .. image:: images/wrap.png
 
     Given a Monad class or instance, create a new Monad with given data.
 
@@ -88,7 +88,7 @@ def unwrap(monad):
     '''
     Unwrap: MA -> A
 
-    .. image:: resources/unwrap.png
+    .. image:: images/unwrap.png
 
     Return the data of a given Monad instance.
 
@@ -115,7 +115,7 @@ def fmap(func, monad):
     '''
     Functor map: (A -> B) -> MA -> MB
 
-    .. image:: resources/fmap.png
+    .. image:: images/fmap.png
 
     Given a Monad of A (MA) and a function A to B, return a Monad of B (MB).
 
@@ -143,7 +143,7 @@ def app(monad_func, monad):
     '''
     Applicative: M(A -> B) -> MA -> MB
 
-    .. image:: resources/app.png
+    .. image:: images/app.png
 
     Given a Monad of A (MA) and a Monad of a function A to B, return a Monad
     of B (MB).
@@ -176,7 +176,7 @@ def bind(func, monad):
     '''
     Bind: (A -> MB) -> MA -> MB
 
-    .. image:: resources/bind.png
+    .. image:: images/bind.png
 
     Given a Monad of A (MA) and a function A to MB, return a Monad of B (MB).
 
@@ -204,7 +204,7 @@ def right(monad_a, monad_b):
     '''
     Right: MA -> MB -> MB
 
-    .. image:: resources/right.png
+    .. image:: images/right.png
 
     Given two Monads, a and b, return the right Monad b.
 
@@ -233,7 +233,7 @@ def fail(monad, error):
     '''
     Fail: M -> E -> ME
 
-    .. image:: resources/fail.png
+    .. image:: images/fail.png
 
     Given a Monad and Exception, return a Monad of that Exception.
 
@@ -259,7 +259,7 @@ def succeed(monad, value):
     '''
     Succed: M -> A -> MA
 
-    .. image:: resources/wrap.png
+    .. image:: images/wrap.png
 
     Given a Monad and a value, return a Monad of that value.
 
@@ -319,7 +319,7 @@ def dot(func_b, func_a):
         fa = lambda x: x + 'a'
         fb = lambda x: x + 'b'
         dot(fb, fa)('x') == 'xab'
-        (fb |idot| fa)('x') == 'xab'
+        (fb | idot | fa)('x') == 'xab'
         ```
 
     Args:
@@ -329,8 +329,10 @@ def dot(func_b, func_a):
     Returns:
         partial: Function composition.
     '''
+
     def of(b, a, *args, **kwargs):
         return b(a(*args, **kwargs))
+
     return partial(of, func_b, func_a)
 
 
@@ -347,7 +349,7 @@ def partial_dot(func):
         u = Monad(lambda x: x + 1)
         v = Monad(lambda x: x + 2)
         w = Monad(3)
-        Monad(partial_dot) |iapp| u |iapp| v |iapp| w
+        Monad(partial_dot) | iapp | u | iapp | v | iapp | w
         ```
 
     Args:
@@ -383,7 +385,10 @@ def catch(monad, func):
             return func(*args, **kwargs)
         except Exception as error:
             return fail(monad, error)
+
     return partial(catch_, func)
+
+
 # ------------------------------------------------------------------------------
 
 
@@ -552,7 +557,7 @@ class Monad(Generic[A]):
         '''
         Applicative: MA -> M(A -> B) -> MB
 
-        .. image:: resources/app.png
+        .. image:: images/app.png
 
         Given a Monad of A (MA) and a Monad of a function A to B, return a Monad
         of B (MB).

@@ -37,6 +37,7 @@ RUN echo "\n${CYAN}INSTALL GENERIC DEPENDENCIES${CLEAR}"; \
         bat \
         btop \
         ca-certificates \
+        cargo \
         curl \
         exa \
         git \
@@ -66,12 +67,12 @@ RUN echo "\n${CYAN}INSTALL PYTHON${CLEAR}"; \
         python3-pydot \
         python3.10-dev \
         python3.10-venv \
-        python3.10-distutils \
         python3.9-dev \
         python3.9-venv \
-        python3.9-distutils \
         python3.8-dev \
         python3.8-venv \
+        python3.10-distutils \
+        python3.9-distutils \
         python3.8-distutils \
     && rm -rf /var/lib/apt/lists/*
 
@@ -87,7 +88,7 @@ RUN echo "\n${CYAN}INSTALL NODEJS${CLEAR}"; \
     mkdir -p /etc/apt/keyrings && \
     curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key \
         | gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg && \
-    export NODE_VERSION=18 && \
+    export NODE_VERSION=20 && \
     echo "deb \
         [signed-by=/etc/apt/keyrings/nodesource.gpg] \
         https://deb.nodesource.com/node_$NODE_VERSION.x \
@@ -157,9 +158,10 @@ RUN echo "\n${CYAN}INSTALL DEV DEPENDENCIES${CLEAR}"; \
         https://raw.githubusercontent.com/pdm-project/pdm/main/install-pdm.py \
         | python3.10 - && \
     pip3.10 install --upgrade --user \
-        pdm \
+        'pdm>=2.19.1' \
         'pdm-bump<0.7.0' \
-        'rolling-pin>=0.10.1' && \
+        'rolling-pin>=0.11.1' \
+        'uv' && \
     mkdir -p /home/ubuntu/.oh-my-zsh/custom/completions && \
     pdm self update --pip-args='--user' && \
     pdm completion zsh > /home/ubuntu/.oh-my-zsh/custom/completions/_pdm
