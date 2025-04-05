@@ -23,7 +23,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="cli" href="cli.html" />
-    <link rel="prev" title="Introduction" href="intro.html" /> 
+    <link rel="prev" title="Introduction" href="readme.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -50,10 +50,11 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="intro.html#installation">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="intro.html#quickstart-guide">Quickstart Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="intro.html#development-cli">Development CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readme.html#installation-for-developers">Installation for Developers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readme.html#installation-for-production">Installation for Production</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readme.html#quickstart-guide">Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readme.html#development-cli">Development CLI</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Python API</span></p>
 <ul class="current">
@@ -144,16 +145,16 @@
            <div itemprop="articleBody">
              
   <section id="yoneda">
-<h1>yoneda<a class="headerlink" href="#yoneda" title="Link to this heading">¶</a></h1>
+<h1>yoneda<a class="headerlink" href="#yoneda" title="Link to this heading"></a></h1>
 <section id="module-yoneda.basic">
-<span id="basic"></span><h2>basic<a class="headerlink" href="#module-yoneda.basic" title="Link to this heading">¶</a></h2>
+<span id="basic"></span><h2>basic<a class="headerlink" href="#module-yoneda.basic" title="Link to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="yoneda.basic.Maybe">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">yoneda.basic.</span></span><span class="sig-name descname"><span class="pre">Maybe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/basic.html#Maybe"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.basic.Maybe" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">yoneda.basic.</span></span><span class="sig-name descname"><span class="pre">Maybe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/basic.html#Maybe"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.basic.Maybe" title="Link to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="#yoneda.monad.Monad" title="yoneda.monad.Monad"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monad</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Generic</span></code>[<code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code>]</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="yoneda.basic.Maybe.__repr__">
-<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/basic.html#Maybe.__repr__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.basic.Maybe.__repr__" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/basic.html#Maybe.__repr__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.basic.Maybe.__repr__" title="Link to this definition"></a></dt>
 <dd><p>String representation of monad.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
@@ -164,7 +165,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="yoneda.basic.Maybe.just">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">just</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/basic.html#Maybe.just"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.basic.Maybe.just" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">just</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/basic.html#Maybe.just"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.basic.Maybe.just" title="Link to this definition"></a></dt>
 <dd><p>Just constructor for Maybe class.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -181,7 +182,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="yoneda.basic.Maybe.nothing">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">nothing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/basic.html#Maybe.nothing"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.basic.Maybe.nothing" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">nothing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/basic.html#Maybe.nothing"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.basic.Maybe.nothing" title="Link to this definition"></a></dt>
 <dd><p>Nothing constructor for Maybe class.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -195,7 +196,7 @@
 
 <dl class="py property">
 <dt class="sig sig-object py" id="yoneda.basic.Maybe.state">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">state</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#yoneda.basic.Maybe.state" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">state</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#yoneda.basic.Maybe.state" title="Link to this definition"></a></dt>
 <dd><p>State of monad. Either just or nothing.</p>
 </dd></dl>
 
@@ -203,11 +204,11 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="yoneda.basic.Try">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">yoneda.basic.</span></span><span class="sig-name descname"><span class="pre">Try</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/basic.html#Try"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.basic.Try" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">yoneda.basic.</span></span><span class="sig-name descname"><span class="pre">Try</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/basic.html#Try"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.basic.Try" title="Link to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="#yoneda.monad.Monad" title="yoneda.monad.Monad"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monad</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Generic</span></code>[<code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code>]</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="yoneda.basic.Try.__repr__">
-<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/basic.html#Try.__repr__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.basic.Try.__repr__" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/basic.html#Try.__repr__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.basic.Try.__repr__" title="Link to this definition"></a></dt>
 <dd><p>String representation of monad.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
@@ -218,7 +219,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="yoneda.basic.Try.app">
-<span class="sig-name descname"><span class="pre">app</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monad_func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/basic.html#Try.app"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.basic.Try.app" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">app</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monad_func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/basic.html#Try.app"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.basic.Try.app" title="Link to this definition"></a></dt>
 <dd><p>Applicative: M(A -&gt; B) -&gt; MB</p>
 <p>Given a Monad of a function A to B, return a Monad of B (MB).</p>
 <dl class="field-list simple">
@@ -236,7 +237,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="yoneda.basic.Try.bind">
-<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/basic.html#Try.bind"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.basic.Try.bind" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/basic.html#Try.bind"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.basic.Try.bind" title="Link to this definition"></a></dt>
 <dd><p>Bind: (A -&gt; MB) -&gt; MB</p>
 <p>Given a function A to MB, return a Monad of B (MB).</p>
 <dl class="field-list simple">
@@ -254,7 +255,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="yoneda.basic.Try.failure">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">failure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">error</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/basic.html#Try.failure"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.basic.Try.failure" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">failure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">error</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/basic.html#Try.failure"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.basic.Try.failure" title="Link to this definition"></a></dt>
 <dd><p>Success constructor for Try class.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -271,7 +272,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="yoneda.basic.Try.fmap">
-<span class="sig-name descname"><span class="pre">fmap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/basic.html#Try.fmap"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.basic.Try.fmap" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">fmap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/basic.html#Try.fmap"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.basic.Try.fmap" title="Link to this definition"></a></dt>
 <dd><p>Functor map: (A -&gt; B) -&gt; MB</p>
 <p>Given a function A to B, return a Monad of B (MB).
 Example: m.fmap(lambda x: x + 2)</p>
@@ -290,13 +291,13 @@ Example: m.fmap(lambda x: x + 2)</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="yoneda.basic.Try.state">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">state</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#yoneda.basic.Try.state" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">state</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#yoneda.basic.Try.state" title="Link to this definition"></a></dt>
 <dd><p>State of monad. Either success or failure.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="yoneda.basic.Try.success">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">success</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/basic.html#Try.success"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.basic.Try.success" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">success</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/basic.html#Try.success"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.basic.Try.success" title="Link to this definition"></a></dt>
 <dd><p>Success constructor for Try class.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -315,10 +316,10 @@ Example: m.fmap(lambda x: x + 2)</p>
 
 </section>
 <section id="module-yoneda.monad">
-<span id="monad"></span><h2>monad<a class="headerlink" href="#module-yoneda.monad" title="Link to this heading">¶</a></h2>
+<span id="monad"></span><h2>monad<a class="headerlink" href="#module-yoneda.monad" title="Link to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="yoneda.monad.C">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">C</span></span><a class="headerlink" href="#yoneda.monad.C" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">C</span></span><a class="headerlink" href="#yoneda.monad.C" title="Link to this definition"></a></dt>
 <dd><p>Monad is a library containing the Monad class and a library of monadic
 functions it calls.</p>
 <p>Haskell equivalence table:</p>
@@ -423,7 +424,7 @@ functions it calls.</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="yoneda.monad.Monad">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">Monad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">Monad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Generic</span></code>[<code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code>]</p>
 <p>Monad is a generic base class for monads. It implements all the monad
 functions as methods which take itself as the first argument.</p>
@@ -503,7 +504,7 @@ functions as methods which take itself as the first argument.</p>
 </table>
 <dl class="py method">
 <dt class="sig sig-object py" id="yoneda.monad.Monad.__and__">
-<span class="sig-name descname"><span class="pre">__and__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.__and__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.__and__" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">__and__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.__and__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.__and__" title="Link to this definition"></a></dt>
 <dd><p>Functor map: (A -&gt; B) -&gt; MB</p>
 <p>Given a function A to B, return a Monad of B (MB).
 Example: m &amp; (lambda x: x + 2)</p>
@@ -522,7 +523,7 @@ Example: m &amp; (lambda x: x + 2)</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="yoneda.monad.Monad.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.__init__" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.__init__" title="Link to this definition"></a></dt>
 <dd><p>Constructs monad instance.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -533,7 +534,7 @@ Example: m &amp; (lambda x: x + 2)</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="yoneda.monad.Monad.__repr__">
-<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.__repr__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.__repr__" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.__repr__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.__repr__" title="Link to this definition"></a></dt>
 <dd><p>String representation of Monad instance.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
@@ -544,7 +545,7 @@ Example: m &amp; (lambda x: x + 2)</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="yoneda.monad.Monad.__rshift__">
-<span class="sig-name descname"><span class="pre">__rshift__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.__rshift__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.__rshift__" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">__rshift__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.__rshift__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.__rshift__" title="Link to this definition"></a></dt>
 <dd><p>Bind: (A -&gt; MB) -&gt; MB</p>
 <p>Given a function A to MB, return a Monad of B (MB).
 Example: m &gt;&gt; Monad</p>
@@ -563,15 +564,15 @@ Example: m &gt;&gt; Monad</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="yoneda.monad.Monad.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#yoneda.monad.Monad.__weakref__" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#yoneda.monad.Monad.__weakref__" title="Link to this definition"></a></dt>
 <dd><p>list of weak references to the object (if defined)</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="yoneda.monad.Monad.__xor__">
-<span class="sig-name descname"><span class="pre">__xor__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monad_func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.__xor__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.__xor__" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">__xor__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monad_func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.__xor__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.__xor__" title="Link to this definition"></a></dt>
 <dd><p>Applicative: MA -&gt; M(A -&gt; B) -&gt; MB</p>
-<img alt="resources/app.png" src="resources/app.png" />
+<img alt="_images/app.png" src="_images/app.png" />
 <p>Given a Monad of A (MA) and a Monad of a function A to B, return a Monad
 of B (MB).
 Example: m ^ Monad.wrap(lambda x: x + 2)</p>
@@ -596,7 +597,7 @@ Example: m ^ Monad.wrap(lambda x: x + 2)</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="yoneda.monad.Monad.app">
-<span class="sig-name descname"><span class="pre">app</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monad_func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.app"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.app" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">app</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monad_func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.app"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.app" title="Link to this definition"></a></dt>
 <dd><p>Applicative: M(A -&gt; B) -&gt; MB</p>
 <p>Given a Monad of a function A to B, return a Monad of B (MB).</p>
 <dl class="field-list simple">
@@ -614,7 +615,7 @@ Example: m ^ Monad.wrap(lambda x: x + 2)</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="yoneda.monad.Monad.bind">
-<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.bind"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.bind" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.bind"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.bind" title="Link to this definition"></a></dt>
 <dd><p>Bind: (A -&gt; MB) -&gt; MB</p>
 <p>Given a function A to MB, return a Monad of B (MB).</p>
 <dl class="field-list simple">
@@ -632,7 +633,7 @@ Example: m ^ Monad.wrap(lambda x: x + 2)</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="yoneda.monad.Monad.fail">
-<span class="sig-name descname"><span class="pre">fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">error</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.fail"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.fail" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">error</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.fail"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.fail" title="Link to this definition"></a></dt>
 <dd><p>Fail: E -&gt; ME</p>
 <p>Return a Monad of given Exception.</p>
 <dl class="field-list simple">
@@ -650,7 +651,7 @@ Example: m ^ Monad.wrap(lambda x: x + 2)</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="yoneda.monad.Monad.fmap">
-<span class="sig-name descname"><span class="pre">fmap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.fmap"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.fmap" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">fmap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.fmap"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.fmap" title="Link to this definition"></a></dt>
 <dd><p>Functor map: (A -&gt; B) -&gt; MB</p>
 <p>Given a function A to B, return a Monad of B (MB).
 Example: m.fmap(lambda x: x + 2)</p>
@@ -669,7 +670,7 @@ Example: m.fmap(lambda x: x + 2)</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="yoneda.monad.Monad.right">
-<span class="sig-name descname"><span class="pre">right</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monad</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.right"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.right" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">right</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monad</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.right"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.right" title="Link to this definition"></a></dt>
 <dd><p>Right: MB -&gt; MB</p>
 <p>Return given monad (self is left, given monad is right).</p>
 <dl class="field-list simple">
@@ -687,7 +688,7 @@ Example: m.fmap(lambda x: x + 2)</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="yoneda.monad.Monad.unwrap">
-<span class="sig-name descname"><span class="pre">unwrap</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.unwrap"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.unwrap" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">unwrap</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.unwrap"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.unwrap" title="Link to this definition"></a></dt>
 <dd><p>Unwrap: () -&gt; A</p>
 <p>Return self._data.</p>
 <dl class="field-list simple">
@@ -702,7 +703,7 @@ Example: m.fmap(lambda x: x + 2)</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="yoneda.monad.Monad.wrap">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">wrap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.wrap"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.wrap" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">wrap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#Monad.wrap"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.Monad.wrap" title="Link to this definition"></a></dt>
 <dd><p>Wrap: A -&gt; MA</p>
 <p>Create a new Monad with given data.</p>
 <dl class="field-list simple">
@@ -722,9 +723,9 @@ Example: m.fmap(lambda x: x + 2)</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="yoneda.monad.app">
-<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">app</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monad_func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">monad</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#app"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.app" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">app</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monad_func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">monad</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#app"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.app" title="Link to this definition"></a></dt>
 <dd><p>Applicative: M(A -&gt; B) -&gt; MA -&gt; MB</p>
-<img alt="resources/app.png" src="resources/app.png" />
+<img alt="_images/app.png" src="_images/app.png" />
 <p>Given a Monad of A (MA) and a Monad of a function A to B, return a Monad
 of B (MB).</p>
 <dl class="field-list simple">
@@ -751,9 +752,9 @@ of B (MB).</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="yoneda.monad.bind">
-<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">monad</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#bind"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.bind" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">monad</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#bind"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.bind" title="Link to this definition"></a></dt>
 <dd><p>Bind: (A -&gt; MB) -&gt; MA -&gt; MB</p>
-<img alt="resources/bind.png" src="resources/bind.png" />
+<img alt="_images/bind.png" src="_images/bind.png" />
 <p>Given a Monad of A (MA) and a function A to MB, return a Monad of B (MB).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -776,7 +777,7 @@ of B (MB).</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="yoneda.monad.catch">
-<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">catch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monad</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#catch"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.catch" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">catch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monad</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#catch"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.catch" title="Link to this definition"></a></dt>
 <dd><p>Catch: MA -&gt; (A -&gt; B) -&gt; (MB | ME)</p>
 <p>Catches exception and returns it rather then raising an error.</p>
 <dl class="field-list simple">
@@ -800,7 +801,7 @@ of B (MB).</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="yoneda.monad.curry">
-<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">curry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#curry"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.curry" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">curry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#curry"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.curry" title="Link to this definition"></a></dt>
 <dd><p>Infix notation for functools.partial.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -821,7 +822,7 @@ of B (MB).</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="yoneda.monad.dot">
-<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">dot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func_b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">func_a</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#dot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.dot" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">dot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func_b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">func_a</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#dot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.dot" title="Link to this definition"></a></dt>
 <dd><dl class="simple">
 <dt>Dot: (b -&gt; c) -&gt; (a -&gt; b) -&gt; (a -&gt; c)</dt><dd><p>fb <a href="#id1"><span class="problematic" id="id2">|idot|</span></a> fa == fb(fa)</p>
 </dd>
@@ -832,7 +833,7 @@ of B (MB).</p>
 <span class="pre">fa</span> <span class="pre">=</span> <span class="pre">lambda</span> <span class="pre">x:</span> <span class="pre">x</span> <span class="pre">+</span> <span class="pre">'a'</span>
 <span class="pre">fb</span> <span class="pre">=</span> <span class="pre">lambda</span> <span class="pre">x:</span> <span class="pre">x</span> <span class="pre">+</span> <span class="pre">'b'</span>
 <span class="pre">dot(fb,</span> <span class="pre">fa)('x')</span> <span class="pre">==</span> <span class="pre">'xab'</span>
-<span class="pre">(fb</span> <span class="pre">|idot|</span> <span class="pre">fa)('x')</span> <span class="pre">==</span> <span class="pre">'xab'</span>
+<span class="pre">(fb</span> <span class="pre">|</span> <span class="pre">idot</span> <span class="pre">|</span> <span class="pre">fa)('x')</span> <span class="pre">==</span> <span class="pre">'xab'</span>
 <span class="pre">`</span></code></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -852,7 +853,7 @@ of B (MB).</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="yoneda.monad.enforce_monad">
-<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">enforce_monad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#enforce_monad"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.enforce_monad" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">enforce_monad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#enforce_monad"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.enforce_monad" title="Link to this definition"></a></dt>
 <dd><p>Enforces item being a Monad subclass or instance.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -869,9 +870,9 @@ of B (MB).</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="yoneda.monad.fail">
-<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monad</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#fail"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.fail" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monad</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#fail"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.fail" title="Link to this definition"></a></dt>
 <dd><p>Fail: M -&gt; E -&gt; ME</p>
-<img alt="resources/fail.png" src="resources/fail.png" />
+<img alt="_images/fail.png" src="_images/fail.png" />
 <p>Given a Monad and Exception, return a Monad of that Exception.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -897,9 +898,9 @@ of B (MB).</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="yoneda.monad.fmap">
-<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">fmap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">monad</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#fmap"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.fmap" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">fmap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">monad</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#fmap"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.fmap" title="Link to this definition"></a></dt>
 <dd><p>Functor map: (A -&gt; B) -&gt; MA -&gt; MB</p>
-<img alt="resources/fmap.png" src="resources/fmap.png" />
+<img alt="_images/fmap.png" src="_images/fmap.png" />
 <p>Given a Monad of A (MA) and a function A to B, return a Monad of B (MB).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -922,16 +923,16 @@ of B (MB).</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="yoneda.monad.partial_dot">
-<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">partial_dot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#partial_dot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.partial_dot" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">partial_dot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#partial_dot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.partial_dot" title="Link to this definition"></a></dt>
 <dd><p>Partial Dot: (b -&gt; c) -&gt; (a -&gt; b)</p>
 <p>Partial version of dot function.</p>
 <p class="rubric">Example</p>
 <p><code class="docutils literal notranslate"><span class="pre">`</span>
-<span class="pre">app</span> <span class="pre">=</span> <span class="pre">sgm.app</span>
+<span class="pre">app</span> <span class="pre">=</span> <span class="pre">ym.app</span>
 <span class="pre">u</span> <span class="pre">=</span> <span class="pre">Monad(lambda</span> <span class="pre">x:</span> <span class="pre">x</span> <span class="pre">+</span> <span class="pre">1)</span>
 <span class="pre">v</span> <span class="pre">=</span> <span class="pre">Monad(lambda</span> <span class="pre">x:</span> <span class="pre">x</span> <span class="pre">+</span> <span class="pre">2)</span>
 <span class="pre">w</span> <span class="pre">=</span> <span class="pre">Monad(3)</span>
-<span class="pre">Monad(partial_dot)</span> <span class="pre">|iapp|</span> <span class="pre">u</span> <span class="pre">|iapp|</span> <span class="pre">v</span> <span class="pre">|iapp|</span> <span class="pre">w</span>
+<span class="pre">Monad(partial_dot)</span> <span class="pre">|</span> <span class="pre">iapp</span> <span class="pre">|</span> <span class="pre">u</span> <span class="pre">|</span> <span class="pre">iapp</span> <span class="pre">|</span> <span class="pre">v</span> <span class="pre">|</span> <span class="pre">iapp</span> <span class="pre">|</span> <span class="pre">w</span>
 <span class="pre">`</span></code></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -948,9 +949,9 @@ of B (MB).</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="yoneda.monad.right">
-<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">right</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monad_a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">monad_b</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#right"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.right" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">right</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monad_a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">monad_b</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#right"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.right" title="Link to this definition"></a></dt>
 <dd><p>Right: MA -&gt; MB -&gt; MB</p>
-<img alt="resources/right.png" src="resources/right.png" />
+<img alt="_images/right.png" src="_images/right.png" />
 <p>Given two Monads, a and b, return the right Monad b.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -973,9 +974,9 @@ of B (MB).</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="yoneda.monad.succeed">
-<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">succeed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monad</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#succeed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.succeed" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">succeed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monad</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#succeed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.succeed" title="Link to this definition"></a></dt>
 <dd><p>Succed: M -&gt; A -&gt; MA</p>
-<img alt="resources/wrap.png" src="resources/wrap.png" />
+<img alt="_images/wrap.png" src="_images/wrap.png" />
 <p>Given a Monad and a value, return a Monad of that value.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1001,9 +1002,9 @@ of B (MB).</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="yoneda.monad.unwrap">
-<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">unwrap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monad</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#unwrap"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.unwrap" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">unwrap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monad</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#unwrap"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.unwrap" title="Link to this definition"></a></dt>
 <dd><p>Unwrap: MA -&gt; A</p>
-<img alt="resources/unwrap.png" src="resources/unwrap.png" />
+<img alt="_images/unwrap.png" src="_images/unwrap.png" />
 <p>Return the data of a given Monad instance.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1023,9 +1024,9 @@ of B (MB).</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="yoneda.monad.wrap">
-<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">wrap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monad</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#wrap"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.wrap" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">yoneda.monad.</span></span><span class="sig-name descname"><span class="pre">wrap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monad</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yoneda/monad.html#wrap"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#yoneda.monad.wrap" title="Link to this definition"></a></dt>
 <dd><p>Wrap: M -&gt; A -&gt; MA</p>
-<img alt="resources/wrap.png" src="resources/wrap.png" />
+<img alt="_images/wrap.png" src="_images/wrap.png" />
 <p>Given a Monad class or instance, create a new Monad with given data.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1053,7 +1054,7 @@ of B (MB).</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="intro.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="readme.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="cli.html" class="btn btn-neutral float-right" title="cli" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

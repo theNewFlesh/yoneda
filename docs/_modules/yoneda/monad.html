@@ -47,10 +47,11 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../intro.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../intro.html#installation">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../intro.html#quickstart-guide">Quickstart Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../intro.html#development-cli">Development CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../readme.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../readme.html#installation-for-developers">Installation for Developers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../readme.html#installation-for-production">Installation for Production</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../readme.html#quickstart-guide">Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../readme.html#development-cli">Development CLI</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Python API</span></p>
 <ul>
@@ -158,7 +159,7 @@
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Wrap: M -&gt; A -&gt; MA</span>
 
-<span class="sd">    .. image:: resources/wrap.png</span>
+<span class="sd">    .. image:: images/wrap.png</span>
 
 <span class="sd">    Given a Monad class or instance, create a new Monad with given data.</span>
 
@@ -184,7 +185,7 @@
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Unwrap: MA -&gt; A</span>
 
-<span class="sd">    .. image:: resources/unwrap.png</span>
+<span class="sd">    .. image:: images/unwrap.png</span>
 
 <span class="sd">    Return the data of a given Monad instance.</span>
 
@@ -214,7 +215,7 @@
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Functor map: (A -&gt; B) -&gt; MA -&gt; MB</span>
 
-<span class="sd">    .. image:: resources/fmap.png</span>
+<span class="sd">    .. image:: images/fmap.png</span>
 
 <span class="sd">    Given a Monad of A (MA) and a function A to B, return a Monad of B (MB).</span>
 
@@ -245,7 +246,7 @@
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Applicative: M(A -&gt; B) -&gt; MA -&gt; MB</span>
 
-<span class="sd">    .. image:: resources/app.png</span>
+<span class="sd">    .. image:: images/app.png</span>
 
 <span class="sd">    Given a Monad of A (MA) and a Monad of a function A to B, return a Monad</span>
 <span class="sd">    of B (MB).</span>
@@ -281,7 +282,7 @@
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Bind: (A -&gt; MB) -&gt; MA -&gt; MB</span>
 
-<span class="sd">    .. image:: resources/bind.png</span>
+<span class="sd">    .. image:: images/bind.png</span>
 
 <span class="sd">    Given a Monad of A (MA) and a function A to MB, return a Monad of B (MB).</span>
 
@@ -312,7 +313,7 @@
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Right: MA -&gt; MB -&gt; MB</span>
 
-<span class="sd">    .. image:: resources/right.png</span>
+<span class="sd">    .. image:: images/right.png</span>
 
 <span class="sd">    Given two Monads, a and b, return the right Monad b.</span>
 
@@ -344,7 +345,7 @@
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Fail: M -&gt; E -&gt; ME</span>
 
-<span class="sd">    .. image:: resources/fail.png</span>
+<span class="sd">    .. image:: images/fail.png</span>
 
 <span class="sd">    Given a Monad and Exception, return a Monad of that Exception.</span>
 
@@ -373,7 +374,7 @@
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Succed: M -&gt; A -&gt; MA</span>
 
-<span class="sd">    .. image:: resources/wrap.png</span>
+<span class="sd">    .. image:: images/wrap.png</span>
 
 <span class="sd">    Given a Monad and a value, return a Monad of that value.</span>
 
@@ -439,7 +440,7 @@
 <span class="sd">        fa = lambda x: x + &#39;a&#39;</span>
 <span class="sd">        fb = lambda x: x + &#39;b&#39;</span>
 <span class="sd">        dot(fb, fa)(&#39;x&#39;) == &#39;xab&#39;</span>
-<span class="sd">        (fb |idot| fa)(&#39;x&#39;) == &#39;xab&#39;</span>
+<span class="sd">        (fb | idot | fa)(&#39;x&#39;) == &#39;xab&#39;</span>
 <span class="sd">        ```</span>
 
 <span class="sd">    Args:</span>
@@ -449,8 +450,10 @@
 <span class="sd">    Returns:</span>
 <span class="sd">        partial: Function composition.</span>
 <span class="sd">    &#39;&#39;&#39;</span>
+
     <span class="k">def</span> <span class="nf">of</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">b</span><span class="p">(</span><span class="n">a</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">))</span>
+
     <span class="k">return</span> <span class="n">partial</span><span class="p">(</span><span class="n">of</span><span class="p">,</span> <span class="n">func_b</span><span class="p">,</span> <span class="n">func_a</span><span class="p">)</span></div>
 
 
@@ -466,11 +469,11 @@
 
 <span class="sd">    Example:</span>
 <span class="sd">        ```</span>
-<span class="sd">        app = sgm.app</span>
+<span class="sd">        app = ym.app</span>
 <span class="sd">        u = Monad(lambda x: x + 1)</span>
 <span class="sd">        v = Monad(lambda x: x + 2)</span>
 <span class="sd">        w = Monad(3)</span>
-<span class="sd">        Monad(partial_dot) |iapp| u |iapp| v |iapp| w</span>
+<span class="sd">        Monad(partial_dot) | iapp | u | iapp | v | iapp | w</span>
 <span class="sd">        ```</span>
 
 <span class="sd">    Args:</span>
@@ -509,7 +512,10 @@
             <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">fail</span><span class="p">(</span><span class="n">monad</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+
     <span class="k">return</span> <span class="n">partial</span><span class="p">(</span><span class="n">catch_</span><span class="p">,</span> <span class="n">func</span><span class="p">)</span></div>
+
+
 
 <span class="c1"># ------------------------------------------------------------------------------</span>
 
@@ -713,7 +719,7 @@
 <span class="w">        </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Applicative: MA -&gt; M(A -&gt; B) -&gt; MB</span>
 
-<span class="sd">        .. image:: resources/app.png</span>
+<span class="sd">        .. image:: images/app.png</span>
 
 <span class="sd">        Given a Monad of A (MA) and a Monad of a function A to B, return a Monad</span>
 <span class="sd">        of B (MB).</span>

@@ -47,10 +47,11 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../intro.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../intro.html#installation">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../intro.html#quickstart-guide">Quickstart Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../intro.html#development-cli">Development CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readme.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readme.html#installation-for-developers">Installation for Developers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readme.html#installation-for-production">Installation for Production</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readme.html#quickstart-guide">Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readme.html#development-cli">Development CLI</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Python API</span></p>
 <ul>
@@ -139,64 +140,69 @@
         <span class="n">nargs</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
         <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store&#39;</span><span class="p">,</span>
         <span class="n">help</span><span class="o">=</span><span class="s1">&#39;&#39;&#39;Command to run in </span><span class="si">{repo}</span><span class="s1"> app.</span>
-<span class="s1">    build-package           - Build production version of repo for publishing</span>
-<span class="s1">    build-prod              - Publish pip package of repo to PyPi</span>
-<span class="s1">    build-publish           - Run production tests first then publish pip package of repo to PyPi</span>
-<span class="s1">    build-test              - Build test version of repo for prod testing</span>
-<span class="s1">    docker-build            - Build Docker image</span>
-<span class="s1">    docker-build-from-cache - Build Docker image from cached image</span>
-<span class="s1">    docker-build-prod       - Build production image</span>
-<span class="s1">    docker-container        - Display the Docker container id</span>
-<span class="s1">    docker-destroy          - Shutdown container and destroy its image</span>
-<span class="s1">    docker-destroy-prod     - Shutdown production container and destroy its image</span>
-<span class="s1">    docker-image            - Display the Docker image id</span>
-<span class="s1">    docker-prod             - Start production container</span>
-<span class="s1">    docker-pull-dev         - Pull development image from Docker registry</span>
-<span class="s1">    docker-pull-prod        - Pull production image from Docker registry</span>
-<span class="s1">    docker-push-dev         - Push development image to Docker registry</span>
-<span class="s1">    docker-push-dev-latest  - Push development image to Docker registry with dev-latest tag</span>
-<span class="s1">    docker-push-prod        - Push production image to Docker registry</span>
-<span class="s1">    docker-push-prod-latest - Push production image to Docker registry with prod-latest tag</span>
-<span class="s1">    docker-remove           - Remove Docker image</span>
-<span class="s1">    docker-restart          - Restart container</span>
-<span class="s1">    docker-start            - Start container</span>
-<span class="s1">    docker-stop             - Stop container</span>
-<span class="s1">    docs                    - Generate sphinx documentation</span>
-<span class="s1">    docs-architecture       - Generate architecture.svg diagram from all import statements</span>
-<span class="s1">    docs-full               - Generate documentation, coverage report, diagram and code</span>
-<span class="s1">    docs-metrics            - Generate code metrics report, plots and tables</span>
-<span class="s1">    library-add             - Add a given package to a given dependency group</span>
-<span class="s1">    library-graph-dev       - Graph dependencies in dev environment</span>
-<span class="s1">    library-graph-prod      - Graph dependencies in prod environment</span>
-<span class="s1">    library-install-dev     - Install all dependencies into dev environment</span>
-<span class="s1">    library-install-prod    - Install all dependencies into prod environment</span>
-<span class="s1">    library-list-dev        - List packages in dev environment</span>
-<span class="s1">    library-list-prod       - List packages in prod environment</span>
-<span class="s1">    library-lock-dev        - Resolve dev.lock file</span>
-<span class="s1">    library-lock-prod       - Resolve prod.lock file</span>
-<span class="s1">    library-remove          - Remove a given package from a given dependency group</span>
-<span class="s1">    library-search          - Search for pip packages</span>
-<span class="s1">    library-sync-dev        - Sync dev environment with packages listed in dev.lock</span>
-<span class="s1">    library-sync-prod       - Sync prod environment with packages listed in prod.lock</span>
-<span class="s1">    library-update          - Update dev dependencies</span>
-<span class="s1">    library-update-pdm      - Update PDM</span>
-<span class="s1">    quickstart              - Display quickstart guide</span>
-<span class="s1">    session-lab             - Run jupyter lab server</span>
-<span class="s1">    session-python          - Run python session with dev dependencies</span>
-<span class="s1">    state                   - State of repository and Docker container</span>
-<span class="s1">    test-coverage           - Generate test coverage report</span>
-<span class="s1">    test-dev                - Run all tests</span>
-<span class="s1">    test-fast               - Test all code excepts tests marked with SKIP_SLOWS_TESTS decorator</span>
-<span class="s1">    test-lint               - Run linting and type checking</span>
-<span class="s1">    test-prod               - Run tests across all support python versions</span>
-<span class="s1">    version                 - Full resolution of repo: dependencies, linting, tests, docs, etc</span>
-<span class="s1">    version-bump-major      - Bump pyproject major version</span>
-<span class="s1">    version-bump-minor      - Bump pyproject minor version</span>
-<span class="s1">    version-bump-patch      - Bump pyproject patch version</span>
-<span class="s1">    version-commit          - Tag with version and commit changes to master</span>
-<span class="s1">    zsh                     - Run ZSH session inside Docker container</span>
-<span class="s1">    zsh-complete            - Generate oh-my-zsh completions</span>
-<span class="s1">    zsh-root                - Run ZSH session as root inside Docker container</span>
+<span class="s1">    build-edit-prod-dockerfile - Edit prod.dockefile to use local package</span>
+<span class="s1">    build-local-package        - Generate pip package of repo and copy it to docker/dist</span>
+<span class="s1">    build-package              - Build production version of repo for publishing</span>
+<span class="s1">    build-prod                 - Publish pip package of repo to PyPi</span>
+<span class="s1">    build-publish              - Run production tests first then publish pip package of repo to PyPi</span>
+<span class="s1">    build-test                 - Build test version of repo for prod testing</span>
+<span class="s1">    docker-build               - Build development image</span>
+<span class="s1">    docker-build-from-cache    - Build development image from registry cache</span>
+<span class="s1">    docker-build-no-cache      - Build development image without cache</span>
+<span class="s1">    docker-build-prod          - Build production image</span>
+<span class="s1">    docker-build-prod-no-cache - Build production image without cache</span>
+<span class="s1">    docker-container           - Display the Docker container id</span>
+<span class="s1">    docker-destroy             - Shutdown container and destroy its image</span>
+<span class="s1">    docker-destroy-prod        - Shutdown production container and destroy its image</span>
+<span class="s1">    docker-image               - Display the Docker image id</span>
+<span class="s1">    docker-prod                - Start production container</span>
+<span class="s1">    docker-pull-dev            - Pull development image from Docker registry</span>
+<span class="s1">    docker-pull-prod           - Pull production image from Docker registry</span>
+<span class="s1">    docker-push-dev            - Push development image to Docker registry</span>
+<span class="s1">    docker-push-dev-latest     - Push development image to Docker registry with dev-latest tag</span>
+<span class="s1">    docker-push-prod           - Push production image to Docker registry</span>
+<span class="s1">    docker-push-prod-latest    - Push production image to Docker registry with prod-latest tag</span>
+<span class="s1">    docker-remove              - Remove Docker image</span>
+<span class="s1">    docker-restart             - Restart container</span>
+<span class="s1">    docker-start               - Start container</span>
+<span class="s1">    docker-stop                - Stop container</span>
+<span class="s1">    docs                       - Generate sphinx documentation</span>
+<span class="s1">    docs-architecture          - Generate architecture.svg diagram from all import statements</span>
+<span class="s1">    docs-full                  - Generate documentation, coverage report, diagram and code</span>
+<span class="s1">    docs-metrics               - Generate code metrics report, plots and tables</span>
+<span class="s1">    library-add                - Add a given package to a given dependency group</span>
+<span class="s1">    library-graph-dev          - Graph dependencies in dev environment</span>
+<span class="s1">    library-graph-prod         - Graph dependencies in prod environment</span>
+<span class="s1">    library-install-dev        - Install all dependencies into dev environment</span>
+<span class="s1">    library-install-prod       - Install all dependencies into prod environment</span>
+<span class="s1">    library-list-dev           - List packages in dev environment</span>
+<span class="s1">    library-list-prod          - List packages in prod environment</span>
+<span class="s1">    library-lock-dev           - Resolve dev.lock file</span>
+<span class="s1">    library-lock-prod          - Resolve prod.lock file</span>
+<span class="s1">    library-remove             - Remove a given package from a given dependency group</span>
+<span class="s1">    library-search             - Search for pip packages</span>
+<span class="s1">    library-sync-dev           - Sync dev environment with packages listed in dev.lock</span>
+<span class="s1">    library-sync-prod          - Sync prod environment with packages listed in prod.lock</span>
+<span class="s1">    library-update             - Update dev dependencies</span>
+<span class="s1">    library-update-pdm         - Update PDM</span>
+<span class="s1">    quickstart                 - Display quickstart guide</span>
+<span class="s1">    session-lab                - Run jupyter lab server</span>
+<span class="s1">    session-python             - Run python session with dev dependencies</span>
+<span class="s1">    state                      - State of repository and Docker container</span>
+<span class="s1">    test-coverage              - Generate test coverage report</span>
+<span class="s1">    test-dev                   - Run all tests</span>
+<span class="s1">    test-fast                  - Test all code excepts tests marked with SKIP_SLOWS_TESTS decorator</span>
+<span class="s1">    test-format                - Format all python files</span>
+<span class="s1">    test-lint                  - Run linting and type checking</span>
+<span class="s1">    test-prod                  - Run tests across all support python versions</span>
+<span class="s1">    version                    - Full resolution of repo: dependencies, linting, tests, docs, etc</span>
+<span class="s1">    version-bump-major         - Bump pyproject major version</span>
+<span class="s1">    version-bump-minor         - Bump pyproject minor version</span>
+<span class="s1">    version-bump-patch         - Bump pyproject patch version</span>
+<span class="s1">    version-commit             - Tag with version and commit changes to master</span>
+<span class="s1">    zsh                        - Run ZSH session inside Docker container</span>
+<span class="s1">    zsh-complete               - Generate oh-my-zsh completions</span>
+<span class="s1">    zsh-root                   - Run ZSH session as root inside Docker container</span>
 <span class="s1">&#39;&#39;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">repo</span><span class="o">=</span><span class="n">REPO</span><span class="p">))</span>  <span class="c1"># noqa: E501</span>
 
     <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
@@ -446,12 +452,13 @@
 <span class="c1"># COMMANDS----------------------------------------------------------------------</span>
 <div class="viewcode-block" id="build_dev_command">
 <a class="viewcode-back" href="../cli.html#cli.build_dev_command">[docs]</a>
-<span class="k">def</span> <span class="nf">build_dev_command</span><span class="p">(</span><span class="n">use_cache</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">build_dev_command</span><span class="p">(</span><span class="n">use_cache</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
     <span class="c1"># type: (bool) -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Build image for development.</span>
+
 <span class="sd">    Args:</span>
-<span class="sd">        use_cache (bool, optional): Whether to use Docker image cache.</span>
-<span class="sd">            Default: False.</span>
+<span class="sd">        use_cache (bool, optional): Use layer cache. Default: False.</span>
 
 <span class="sd">    Returns:</span>
 <span class="sd">        str: Command to build dev image.</span>
@@ -469,7 +476,9 @@
 <span class="s1">    &#39;&#39;&#39;</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">use_cache</span><span class="p">:</span>
         <span class="n">cmd</span> <span class="o">+=</span> <span class="s1">&#39; --cache-from </span><span class="si">{registry}</span><span class="s1">:dev-latest&#39;</span>
-    <span class="n">cmd</span> <span class="o">+=</span> <span class="s1">&#39; --tag </span><span class="si">{repo}</span><span class="s1">:dev .; cd ..&#39;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">cmd</span> <span class="o">+=</span> <span class="s1">&#39; --no-cache&#39;</span>
+    <span class="n">cmd</span> <span class="o">+=</span> <span class="s1">&#39; --tag </span><span class="si">{repo}</span><span class="s1">:dev . &amp;&amp; cd ..&#39;</span>
 
     <span class="n">cmds</span> <span class="o">=</span> <span class="p">[</span>
         <span class="n">enter_repo</span><span class="p">(),</span>
@@ -482,29 +491,36 @@
 
 <div class="viewcode-block" id="build_prod_command">
 <a class="viewcode-back" href="../cli.html#cli.build_prod_command">[docs]</a>
-<span class="k">def</span> <span class="nf">build_prod_command</span><span class="p">():</span>
-    <span class="c1"># type: () -&gt; str</span>
+<span class="k">def</span> <span class="nf">build_prod_command</span><span class="p">(</span><span class="n">use_cache</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="c1"># type: (bool) -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Build image for production.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        use_cache (bool, optional): Use layer cache. Default: False.</span>
+
 <span class="sd">    Returns:</span>
 <span class="sd">        str: Command to build prod image.</span>
 <span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">cmd</span> <span class="o">=</span> <span class="n">line</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">        cd docker;</span>
+<span class="s1">        docker build</span>
+<span class="s1">            --force-rm</span>
+<span class="s1">            --file prod.dockerfile</span>
+<span class="s1">            --build-arg VERSION=&quot;$VERSION&quot;</span>
+<span class="s1">            --label &quot;repository=</span><span class="si">{repo}</span><span class="s1">&quot;</span>
+<span class="s1">            --label &quot;docker-registry=</span><span class="si">{registry}</span><span class="s1">&quot;</span>
+<span class="s1">            --label &quot;git-user=</span><span class="si">{git_user}</span><span class="s1">&quot;</span>
+<span class="s1">            --label &quot;git-branch=$(git branch --show-current)&quot;</span>
+<span class="s1">            --label &quot;git-commit=$(git rev-parse HEAD)&quot;</span>
+<span class="s1">    &#39;&#39;&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">use_cache</span><span class="p">:</span>
+        <span class="n">cmd</span> <span class="o">+=</span> <span class="s1">&#39; --no-cache&#39;</span>
+    <span class="n">cmd</span> <span class="o">+=</span> <span class="s1">&#39; --tag </span><span class="si">{repo}</span><span class="s1">:prod . &amp;&amp; cd ..&#39;</span>
     <span class="n">cmds</span> <span class="o">=</span> <span class="p">[</span>
         <span class="n">enter_repo</span><span class="p">(),</span>
         <span class="n">version_variable</span><span class="p">(),</span>
-        <span class="n">line</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
-<span class="s1">            cd docker;</span>
-<span class="s1">            docker build</span>
-<span class="s1">                --force-rm</span>
-<span class="s1">                --no-cache</span>
-<span class="s1">                --file prod.dockerfile</span>
-<span class="s1">                --label &quot;repository=</span><span class="si">{repo}</span><span class="s1">&quot;</span>
-<span class="s1">                --label &quot;docker-registry=</span><span class="si">{registry}</span><span class="s1">&quot;</span>
-<span class="s1">                --label &quot;git-user=</span><span class="si">{git_user}</span><span class="s1">&quot;</span>
-<span class="s1">                --label &quot;git-branch=$(git branch --show-current)&quot;</span>
-<span class="s1">                --label &quot;git-commit=$(git rev-parse HEAD)&quot;</span>
-<span class="s1">                --tag </span><span class="si">{repo}</span><span class="s1">:prod .;</span>
-<span class="s1">            cd ..</span>
-<span class="s1">        &#39;&#39;&#39;</span><span class="p">),</span>
+        <span class="n">cmd</span><span class="p">,</span>
         <span class="n">exit_repo</span><span class="p">(),</span>
     <span class="p">]</span>
     <span class="k">return</span> <span class="n">resolve</span><span class="p">(</span><span class="n">cmds</span><span class="p">)</span></div>
@@ -587,24 +603,20 @@
 <span class="sd">    Returns:</span>
 <span class="sd">        str: Command to start prod container.</span>
 <span class="sd">    &#39;&#39;&#39;</span>
-    <span class="k">if</span> <span class="n">args</span> <span class="o">==</span> <span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">]:</span>
-        <span class="n">cmds</span> <span class="o">=</span> <span class="p">[</span>
-            <span class="n">line</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
-<span class="s1">                echo &quot;Please provide a directory to map into the container</span>
-<span class="s1">                after the </span><span class="si">{cyan}</span><span class="s1">-a</span><span class="si">{clear}</span><span class="s1"> flag.&quot;</span>
-<span class="s1">            &#39;&#39;&#39;</span><span class="p">)</span>
-        <span class="p">]</span>
-        <span class="k">return</span> <span class="n">resolve</span><span class="p">(</span><span class="n">cmds</span><span class="p">)</span>
-
-    <span class="n">run</span> <span class="o">=</span> <span class="s1">&#39;docker run --volume </span><span class="si">{}</span><span class="s1">:/mnt/storage&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">cmd</span> <span class="o">=</span> <span class="s1">&#39;docker run&#39;</span>
+    <span class="k">if</span> <span class="n">args</span> <span class="o">!=</span> <span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">]:</span>
+        <span class="n">cmd</span> <span class="o">+=</span> <span class="s1">&#39; --volume </span><span class="si">{}</span><span class="s1">:/mnt/storage&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
     <span class="n">cmds</span> <span class="o">=</span> <span class="p">[</span>
         <span class="n">enter_repo</span><span class="p">(),</span>
         <span class="n">version_variable</span><span class="p">(),</span>
-        <span class="n">line</span><span class="p">(</span><span class="n">run</span> <span class="o">+</span> <span class="s1">&#39;&#39;&#39;</span>
+        <span class="n">line</span><span class="p">(</span><span class="n">cmd</span> <span class="o">+</span> <span class="s1">&#39;&#39;&#39;</span>
 <span class="s1">            --rm</span>
+<span class="s1">            --interactive</span>
+<span class="s1">            --tty</span>
 <span class="s1">            --publish </span><span class="si">{port}</span><span class="s1">:</span><span class="si">{port}</span>
 <span class="s1">            --name </span><span class="si">{repo}</span><span class="s1">-prod</span>
 <span class="s1">            </span><span class="si">{repo}</span><span class="s1">:prod</span>
+<span class="s1">            bash</span>
 <span class="s1">        &#39;&#39;&#39;</span><span class="p">),</span>
         <span class="n">exit_repo</span><span class="p">(),</span>
     <span class="p">]</span>
@@ -961,13 +973,17 @@
 <span class="sd">    &#39;&#39;&#39;</span>
     <span class="n">mode</span><span class="p">,</span> <span class="n">args</span> <span class="o">=</span> <span class="n">get_info</span><span class="p">()</span>
     <span class="n">lut</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;build-edit-prod-dockerfile&#39;</span><span class="p">:</span> <span class="n">x_tools_command</span><span class="p">(</span><span class="s1">&#39;x_build_edit_prod_dockerfile&#39;</span><span class="p">,</span> <span class="n">args</span><span class="p">),</span>
+        <span class="s1">&#39;build-local-package&#39;</span><span class="p">:</span> <span class="n">x_tools_command</span><span class="p">(</span><span class="s1">&#39;x_build_local_package&#39;</span><span class="p">,</span> <span class="n">args</span><span class="p">),</span>
         <span class="s1">&#39;build-package&#39;</span><span class="p">:</span> <span class="n">x_tools_command</span><span class="p">(</span><span class="s1">&#39;x_build_package&#39;</span><span class="p">,</span> <span class="n">args</span><span class="p">),</span>
         <span class="s1">&#39;build-prod&#39;</span><span class="p">:</span> <span class="n">x_tools_command</span><span class="p">(</span><span class="s1">&#39;x_build_prod&#39;</span><span class="p">,</span> <span class="n">args</span><span class="p">),</span>
         <span class="s1">&#39;build-publish&#39;</span><span class="p">:</span> <span class="n">x_tools_command</span><span class="p">(</span><span class="s1">&#39;x_build_publish&#39;</span><span class="p">,</span> <span class="n">args</span><span class="p">),</span>
         <span class="s1">&#39;build-test&#39;</span><span class="p">:</span> <span class="n">x_tools_command</span><span class="p">(</span><span class="s1">&#39;x_build_test&#39;</span><span class="p">,</span> <span class="n">args</span><span class="p">),</span>
         <span class="s1">&#39;docker-build&#39;</span><span class="p">:</span> <span class="n">build_dev_command</span><span class="p">(),</span>
         <span class="s1">&#39;docker-build-from-cache&#39;</span><span class="p">:</span> <span class="n">build_dev_command</span><span class="p">(</span><span class="n">use_cache</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
-        <span class="s1">&#39;docker-build-prod&#39;</span><span class="p">:</span> <span class="n">build_prod_command</span><span class="p">(),</span>
+        <span class="s1">&#39;docker-build-no-cache&#39;</span><span class="p">:</span> <span class="n">build_dev_command</span><span class="p">(</span><span class="n">use_cache</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span>
+        <span class="s1">&#39;docker-build-prod&#39;</span><span class="p">:</span> <span class="n">build_prod_command</span><span class="p">(</span><span class="n">use_cache</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+        <span class="s1">&#39;docker-build-prod-no-cache&#39;</span><span class="p">:</span> <span class="n">build_prod_command</span><span class="p">(</span><span class="n">use_cache</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span>
         <span class="s1">&#39;docker-container&#39;</span><span class="p">:</span> <span class="n">container_id_command</span><span class="p">(),</span>
         <span class="s1">&#39;docker-destroy&#39;</span><span class="p">:</span> <span class="n">destroy_dev_command</span><span class="p">(),</span>
         <span class="s1">&#39;docker-destroy-prod&#39;</span><span class="p">:</span> <span class="n">destroy_prod_command</span><span class="p">(),</span>
@@ -1009,6 +1025,7 @@
         <span class="s1">&#39;test-coverage&#39;</span><span class="p">:</span> <span class="n">x_tools_command</span><span class="p">(</span><span class="s1">&#39;x_test_coverage&#39;</span><span class="p">,</span> <span class="n">args</span><span class="p">),</span>
         <span class="s1">&#39;test-dev&#39;</span><span class="p">:</span> <span class="n">x_tools_command</span><span class="p">(</span><span class="s1">&#39;x_test_dev&#39;</span><span class="p">,</span> <span class="n">args</span><span class="p">),</span>
         <span class="s1">&#39;test-fast&#39;</span><span class="p">:</span> <span class="n">x_tools_command</span><span class="p">(</span><span class="s1">&#39;x_test_fast&#39;</span><span class="p">,</span> <span class="n">args</span><span class="p">),</span>
+        <span class="s1">&#39;test-format&#39;</span><span class="p">:</span> <span class="n">x_tools_command</span><span class="p">(</span><span class="s1">&#39;x_test_format&#39;</span><span class="p">,</span> <span class="n">args</span><span class="p">),</span>
         <span class="s1">&#39;test-lint&#39;</span><span class="p">:</span> <span class="n">x_tools_command</span><span class="p">(</span><span class="s1">&#39;x_test_lint&#39;</span><span class="p">,</span> <span class="n">args</span><span class="p">),</span>
         <span class="s1">&#39;test-prod&#39;</span><span class="p">:</span> <span class="n">x_tools_command</span><span class="p">(</span><span class="s1">&#39;x_test_prod&#39;</span><span class="p">,</span> <span class="n">args</span><span class="p">),</span>
         <span class="s1">&#39;version&#39;</span><span class="p">:</span> <span class="n">x_tools_command</span><span class="p">(</span><span class="s1">&#39;x_version&#39;</span><span class="p">,</span> <span class="n">args</span><span class="p">),</span>
