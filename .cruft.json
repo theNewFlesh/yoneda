@@ -41,9 +41,9 @@
       "volume": "",
       "keywords": "category, category-theory, monad, monoid, functor, isomorphism, morphism, arrow",
       "year": "2024",
-      "python_min_version": "8",
-      "python_max_version": "10",
-      "initial_repo_version": "0.1.0",
+      "python_min_version": "10",
+      "python_max_version": "13",
+      "initial_repo_version": "0.1.2",
       "_template": "https://github.com/theNewFlesh/cookiecutter-datalus"
     }
   },
