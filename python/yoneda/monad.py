@@ -336,8 +336,9 @@ def dot(func_b, func_a):
     return partial(of, func_b, func_a)
 
 
+# TODO: Figure out how to make this type signature work
 def partial_dot(func):
-    # type: (Callable[[B], C]) -> partial[Callable[[A], B]]
+    # type: (Callable[[B], C]) -> Any
     '''
     Partial Dot: (b -> c) -> (a -> b)
 
