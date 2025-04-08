@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>cli &mdash; yoneda  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../_static/style.css" />
 
@@ -16,7 +16,7 @@
         <script src="../_static/jquery.js?v=5d32c60e"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../_static/documentation_options.js?v=5929fcd5"></script>
-        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -35,7 +35,7 @@
             yoneda
           </a>
               <div class="version">
-                0.1.2
+                0.2.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -91,13 +91,13 @@
 
 <span class="k">try</span><span class="p">:</span>
     <span class="c1"># python2.7 doesn&#39;t have typing module</span>
-    <span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Any</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Tuple</span>  <span class="c1"># noqa F401</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Any</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Tuple</span>  <span class="c1"># noqa F401</span>
 <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
     <span class="k">pass</span>
 
-<span class="kn">import</span> <span class="nn">argparse</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">argparse</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
 
 <span class="c1"># python2.7 doesn&#39;t have pathlib module</span>
 <span class="n">REPO_PATH</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">sep</span><span class="p">,</span> <span class="o">*</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">sep</span><span class="p">)[:</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
@@ -116,7 +116,7 @@
 
 <div class="viewcode-block" id="get_info">
 <a class="viewcode-back" href="../cli.html#cli.get_info">[docs]</a>
-<span class="k">def</span> <span class="nf">get_info</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_info</span><span class="p">():</span>
     <span class="c1"># type: () -&gt; Tuple[str, list]</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Parses command line call.</span>
@@ -227,7 +227,7 @@
 
 <div class="viewcode-block" id="resolve">
 <a class="viewcode-back" href="../cli.html#cli.resolve">[docs]</a>
-<span class="k">def</span> <span class="nf">resolve</span><span class="p">(</span><span class="n">commands</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">resolve</span><span class="p">(</span><span class="n">commands</span><span class="p">):</span>
     <span class="c1"># type: (List[str]) -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Convenience function for creating single commmand from given commands and</span>
@@ -272,7 +272,7 @@
 
 <div class="viewcode-block" id="line">
 <a class="viewcode-back" href="../cli.html#cli.line">[docs]</a>
-<span class="k">def</span> <span class="nf">line</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">line</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">):</span>
     <span class="c1"># type: (str, str) -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Convenience function for formatting a given block of text as series of</span>
@@ -296,7 +296,7 @@
 <span class="c1"># SUBCOMMANDS-------------------------------------------------------------------</span>
 <div class="viewcode-block" id="enter_repo">
 <a class="viewcode-back" href="../cli.html#cli.enter_repo">[docs]</a>
-<span class="k">def</span> <span class="nf">enter_repo</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">enter_repo</span><span class="p">():</span>
     <span class="c1"># type: () -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Returns:</span>
@@ -308,7 +308,7 @@
 
 <div class="viewcode-block" id="exit_repo">
 <a class="viewcode-back" href="../cli.html#cli.exit_repo">[docs]</a>
-<span class="k">def</span> <span class="nf">exit_repo</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">exit_repo</span><span class="p">():</span>
     <span class="c1"># type: () -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Returns:</span>
@@ -320,7 +320,7 @@
 
 <div class="viewcode-block" id="start">
 <a class="viewcode-back" href="../cli.html#cli.start">[docs]</a>
-<span class="k">def</span> <span class="nf">start</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">start</span><span class="p">():</span>
     <span class="c1"># type: () -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Returns:</span>
@@ -351,7 +351,7 @@
 
 <div class="viewcode-block" id="stop">
 <a class="viewcode-back" href="../cli.html#cli.stop">[docs]</a>
-<span class="k">def</span> <span class="nf">stop</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">stop</span><span class="p">():</span>
     <span class="c1"># type: () -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Returns:</span>
@@ -371,7 +371,7 @@
 
 <div class="viewcode-block" id="remove_container">
 <a class="viewcode-back" href="../cli.html#cli.remove_container">[docs]</a>
-<span class="k">def</span> <span class="nf">remove_container</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">remove_container</span><span class="p">():</span>
     <span class="c1"># type: () -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Returns:</span>
@@ -383,7 +383,7 @@
 
 <div class="viewcode-block" id="docker_exec">
 <a class="viewcode-back" href="../cli.html#cli.docker_exec">[docs]</a>
-<span class="k">def</span> <span class="nf">docker_exec</span><span class="p">(</span><span class="n">tty</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">docker_exec</span><span class="p">(</span><span class="n">tty</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
     <span class="c1"># type: (bool) -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Args:</span>
@@ -411,7 +411,7 @@
 
 <div class="viewcode-block" id="version_variable">
 <a class="viewcode-back" href="../cli.html#cli.version_variable">[docs]</a>
-<span class="k">def</span> <span class="nf">version_variable</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">version_variable</span><span class="p">():</span>
     <span class="c1"># type: () -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Returns:</span>
@@ -428,7 +428,7 @@
 
 <div class="viewcode-block" id="zshrc_tools">
 <a class="viewcode-back" href="../cli.html#cli.zshrc_tools">[docs]</a>
-<span class="k">def</span> <span class="nf">zshrc_tools</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">[]):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">zshrc_tools</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">[]):</span>
     <span class="c1"># type: (str, list[str]) -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Creates a tools command string that sources zshrc first.</span>
@@ -452,7 +452,7 @@
 <span class="c1"># COMMANDS----------------------------------------------------------------------</span>
 <div class="viewcode-block" id="build_dev_command">
 <a class="viewcode-back" href="../cli.html#cli.build_dev_command">[docs]</a>
-<span class="k">def</span> <span class="nf">build_dev_command</span><span class="p">(</span><span class="n">use_cache</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">build_dev_command</span><span class="p">(</span><span class="n">use_cache</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
     <span class="c1"># type: (bool) -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Build image for development.</span>
@@ -491,7 +491,7 @@
 
 <div class="viewcode-block" id="build_prod_command">
 <a class="viewcode-back" href="../cli.html#cli.build_prod_command">[docs]</a>
-<span class="k">def</span> <span class="nf">build_prod_command</span><span class="p">(</span><span class="n">use_cache</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">build_prod_command</span><span class="p">(</span><span class="n">use_cache</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
     <span class="c1"># type: (bool) -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Build image for production.</span>
@@ -529,7 +529,7 @@
 
 <div class="viewcode-block" id="container_id_command">
 <a class="viewcode-back" href="../cli.html#cli.container_id_command">[docs]</a>
-<span class="k">def</span> <span class="nf">container_id_command</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">container_id_command</span><span class="p">():</span>
     <span class="c1"># type: () -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Returns:</span>
@@ -544,7 +544,7 @@
 
 <div class="viewcode-block" id="destroy_dev_command">
 <a class="viewcode-back" href="../cli.html#cli.destroy_dev_command">[docs]</a>
-<span class="k">def</span> <span class="nf">destroy_dev_command</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">destroy_dev_command</span><span class="p">():</span>
     <span class="c1"># type: () -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Returns:</span>
@@ -563,7 +563,7 @@
 
 <div class="viewcode-block" id="destroy_prod_command">
 <a class="viewcode-back" href="../cli.html#cli.destroy_prod_command">[docs]</a>
-<span class="k">def</span> <span class="nf">destroy_prod_command</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">destroy_prod_command</span><span class="p">():</span>
     <span class="c1"># type: () -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Returns:</span>
@@ -579,7 +579,7 @@
 
 <div class="viewcode-block" id="image_id_command">
 <a class="viewcode-back" href="../cli.html#cli.image_id_command">[docs]</a>
-<span class="k">def</span> <span class="nf">image_id_command</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">image_id_command</span><span class="p">():</span>
     <span class="c1"># type: () -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Returns:</span>
@@ -597,7 +597,7 @@
 
 <div class="viewcode-block" id="prod_command">
 <a class="viewcode-back" href="../cli.html#cli.prod_command">[docs]</a>
-<span class="k">def</span> <span class="nf">prod_command</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">prod_command</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
     <span class="c1"># type: (list) -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Returns:</span>
@@ -626,7 +626,7 @@
 
 <div class="viewcode-block" id="pull_command">
 <a class="viewcode-back" href="../cli.html#cli.pull_command">[docs]</a>
-<span class="k">def</span> <span class="nf">pull_command</span><span class="p">(</span><span class="n">tag</span><span class="o">=</span><span class="s1">&#39;dev-latest&#39;</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">pull_command</span><span class="p">(</span><span class="n">tag</span><span class="o">=</span><span class="s1">&#39;dev-latest&#39;</span><span class="p">):</span>
     <span class="c1"># type: (str) -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Args:</span>
@@ -644,7 +644,7 @@
 
 <div class="viewcode-block" id="push_command">
 <a class="viewcode-back" href="../cli.html#cli.push_command">[docs]</a>
-<span class="k">def</span> <span class="nf">push_command</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s1">&#39;dev&#39;</span><span class="p">,</span> <span class="n">suffix</span><span class="o">=</span><span class="s1">&#39;$VERSION&#39;</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">push_command</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s1">&#39;dev&#39;</span><span class="p">,</span> <span class="n">suffix</span><span class="o">=</span><span class="s1">&#39;$VERSION&#39;</span><span class="p">):</span>
     <span class="c1"># type: (str, str) -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Args:</span>
@@ -672,7 +672,7 @@
 
 <div class="viewcode-block" id="remove_command">
 <a class="viewcode-back" href="../cli.html#cli.remove_command">[docs]</a>
-<span class="k">def</span> <span class="nf">remove_command</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">remove_command</span><span class="p">():</span>
     <span class="c1"># type: () -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Returns:</span>
@@ -689,7 +689,7 @@
 
 <div class="viewcode-block" id="restart_command">
 <a class="viewcode-back" href="../cli.html#cli.restart_command">[docs]</a>
-<span class="k">def</span> <span class="nf">restart_command</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">restart_command</span><span class="p">():</span>
     <span class="c1"># type: () -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Returns:</span>
@@ -713,7 +713,7 @@
 
 <div class="viewcode-block" id="start_command">
 <a class="viewcode-back" href="../cli.html#cli.start_command">[docs]</a>
-<span class="k">def</span> <span class="nf">start_command</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">start_command</span><span class="p">():</span>
     <span class="c1"># type: () -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Returns:</span>
@@ -729,7 +729,7 @@
 
 <div class="viewcode-block" id="state_command">
 <a class="viewcode-back" href="../cli.html#cli.state_command">[docs]</a>
-<span class="k">def</span> <span class="nf">state_command</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">state_command</span><span class="p">():</span>
     <span class="c1"># type: () -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Returns:</span>
@@ -781,7 +781,7 @@
 
 <div class="viewcode-block" id="stop_command">
 <a class="viewcode-back" href="../cli.html#cli.stop_command">[docs]</a>
-<span class="k">def</span> <span class="nf">stop_command</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">stop_command</span><span class="p">():</span>
     <span class="c1"># type: () -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Returns:</span>
@@ -798,7 +798,7 @@
 
 <div class="viewcode-block" id="x_tools_command">
 <a class="viewcode-back" href="../cli.html#cli.x_tools_command">[docs]</a>
-<span class="k">def</span> <span class="nf">x_tools_command</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">[],</span> <span class="n">tty</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">x_tools_command</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">[],</span> <span class="n">tty</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
     <span class="c1"># type: (str, list[str], bool) -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Runs a x_tools command.</span>
@@ -824,7 +824,7 @@
 
 <div class="viewcode-block" id="quickstart_command">
 <a class="viewcode-back" href="../cli.html#cli.quickstart_command">[docs]</a>
-<span class="k">def</span> <span class="nf">quickstart_command</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">quickstart_command</span><span class="p">():</span>
     <span class="c1"># type: () -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Returns a command which prints the quickstart guide.</span>
@@ -844,7 +844,7 @@
 
 <div class="viewcode-block" id="version_commit_command">
 <a class="viewcode-back" href="../cli.html#cli.version_commit_command">[docs]</a>
-<span class="k">def</span> <span class="nf">version_commit_command</span><span class="p">(</span><span class="n">args</span><span class="o">=</span><span class="p">[]):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">version_commit_command</span><span class="p">(</span><span class="n">args</span><span class="o">=</span><span class="p">[]):</span>
     <span class="c1"># type: (List[str]) -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Args:</span>
@@ -873,7 +873,7 @@
 
 <div class="viewcode-block" id="zsh_command">
 <a class="viewcode-back" href="../cli.html#cli.zsh_command">[docs]</a>
-<span class="k">def</span> <span class="nf">zsh_command</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">zsh_command</span><span class="p">():</span>
     <span class="c1"># type: () -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Returns:</span>
@@ -891,7 +891,7 @@
 
 <div class="viewcode-block" id="zsh_complete_command">
 <a class="viewcode-back" href="../cli.html#cli.zsh_complete_command">[docs]</a>
-<span class="k">def</span> <span class="nf">zsh_complete_command</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">zsh_complete_command</span><span class="p">():</span>
     <span class="c1"># type: () -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Returns:</span>
@@ -934,7 +934,7 @@
 
 <div class="viewcode-block" id="zsh_root_command">
 <a class="viewcode-back" href="../cli.html#cli.zsh_root_command">[docs]</a>
-<span class="k">def</span> <span class="nf">zsh_root_command</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">zsh_root_command</span><span class="p">():</span>
     <span class="c1"># type: () -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Returns:</span>
@@ -946,7 +946,7 @@
 
 <div class="viewcode-block" id="get_illegal_mode_command">
 <a class="viewcode-back" href="../cli.html#cli.get_illegal_mode_command">[docs]</a>
-<span class="k">def</span> <span class="nf">get_illegal_mode_command</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_illegal_mode_command</span><span class="p">():</span>
     <span class="c1"># type: () -&gt; str</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Returns:</span>
@@ -966,7 +966,7 @@
 <span class="c1"># MAIN--------------------------------------------------------------------------</span>
 <div class="viewcode-block" id="main">
 <a class="viewcode-back" href="../cli.html#cli.main">[docs]</a>
-<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="c1"># type: () -&gt; None</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Print different commands to stdout depending on mode provided to command.</span>
