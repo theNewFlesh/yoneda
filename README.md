@@ -31,7 +31,7 @@
 [![](https://img.shields.io/pypi/v/yoneda?style=for-the-badge&label=PyPI&color=5F95DE&logo=pypi&logoColor=5F95DE)](https://pypi.org/project/yoneda/)
 [![](https://img.shields.io/pypi/dm/yoneda?style=for-the-badge&label=Downloads&color=5F95DE)](https://pepy.tech/project/yoneda)
 
-<img id="logo" src="sphinx/images/logo.png" style="max-width: 717px">
+<img id="logo" src="sphinx/images/logo.png" style="max-width: 100%">
 
 # Introduction
 
