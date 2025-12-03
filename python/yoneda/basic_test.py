@@ -29,6 +29,9 @@ class MaybeTests(unittest.TestCase):
         result = yb.Maybe.just(5).state
         self.assertEqual(result, 'just')
 
+        result = yb.Maybe('nan').state
+        self.assertEqual(result, 'just')
+
         result = yb.Maybe.nothing().state
         self.assertEqual(result, 'nothing')
 

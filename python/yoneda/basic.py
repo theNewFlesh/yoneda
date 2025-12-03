@@ -49,7 +49,7 @@ class Maybe(Monad, Generic[A]):
         # type: () -> str
         '''State of monad. Either just or nothing.'''
         data = self._data
-        if data is None or math.isnan(data):
+        if data is None or (isinstance(data, float) and math.isnan(data)):
             return 'nothing'
         return 'just'
 # ------------------------------------------------------------------------------
