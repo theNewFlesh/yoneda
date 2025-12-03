@@ -1,6 +1,6 @@
 [project]
 name = "yoneda"
-version = "0.2.0"
+version = "0.2.1"
 description = "Category theory in python."
 authors = [
     { name = "Alex Braun", email = "alexander.g.braun@gmail.com" },
