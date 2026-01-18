@@ -32,7 +32,7 @@
       "git_user": "theNewFlesh",
       "git_host": "github",
       "git_organization": "theNewFlesh",
-      "docker_registry": "dockerhub",
+      "docker_registry": "docker.io",
       "organization_url": "github.com",
       "description": "Category theory in python.",
       "author": "Alex Braun",
