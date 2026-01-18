@@ -7,6 +7,7 @@
     "\\.gitkeep$",
     "docker/config/.*\\.lock$",
     "docker/config/build\\.yaml",
+    "docker/config/secret-env",
     "docs/.*",
     "LICENSE",
     "mkdocs/md/(?!index\\.md|style\\.css)",
@@ -26,6 +27,7 @@
       "include_openexr": "no",
       "include_prod_cli": "no",
       "include_prod_envs": "yes",
+      "include_pypi_badges": "yes",
       "include_secret_env": "no",
       "include_vscode_server": "no",
       "port_prefix": "22",
@@ -44,7 +46,7 @@
       "python_min_version": "10",
       "python_max_version": "13",
       "initial_repo_version": "0.1.2",
-      "_template": "https://github.com/theNewFlesh/cookiecutter-datalus",
+      "status_bar_color": "#B6ECF3",
       "_commit": "50c00ad5bf94d64ffe7a6e8552eb375a4349cf7b"
     }
   },
