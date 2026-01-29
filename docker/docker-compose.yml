@@ -2,7 +2,7 @@ services:
   yoneda:
     container_name: yoneda
     image: yoneda:dev
-    platform: linux/amd64
+    platform: linux/arm64
     build:
       context: .
       dockerfile: dev.dockerfile

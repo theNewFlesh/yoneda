@@ -48,7 +48,8 @@ See [documentation](https://theNewFlesh.github.io/yoneda/) for details.
 4. `cd yoneda`
 5. `chmod +x bin/yoneda`
 6. `bin/yoneda docker-start`
-   - If building on a M1 Mac run `export DOCKER_DEFAULT_PLATFORM=linux/amd64` first.
+   - If building on a silicon Mac change the value of the `PLATFORM` variable in
+     the cli.py module to `linux/arm64`.
 
 The service should take a few minutes to start up.
 
@@ -60,8 +61,8 @@ Run `bin/yoneda --help` for more help on the command line tool.
     in your ~/.zshrc file:
     - `alias yoneda="cd [parent dir]/yoneda; bin/yoneda"`
     - Replace `[parent dir]` with the parent directory of this repository
-3. Consider adding the following line to your ~/.zshrc if you are using a M1 Mac:
-    - `export DOCKER_DEFAULT_PLATFORM=linux/amd64`
+3. Consider adding the following line to your ~/.zshrc if you are using a silicon Mac:
+    - `export DOCKER_DEFAULT_PLATFORM=linux/arm64`
 4. Running the `zsh-complete` command will enable tab completions of the cli
    commands, in the next shell session.
 
